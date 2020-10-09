@@ -1,5 +1,67 @@
-/* If you can see a peach background, the css file is correctly linked. Feel free to change or remove this styling! */
-
 body {
   background-color: peachpuff;
+  font-family: 'Work Sans', sans-serif;
 }
+
+/* General styling */
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+/* The main section are the flex parent that wraps its children onto as many rows as needed. */ 
+.flex-parent {
+	background: black;
+	margin: 10px;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* The divs are the flex children, they will take up 100% and be displayed in one column on mobile/small screen */
+.item {
+	text-align: center;
+	width: 100%;
+	height: 400px;
+	flex-grow: 1;
+}
+
+.blue {
+	background: #908aee;
+}
+
+.red {
+	background: #eb654d;
+}
+
+.yellow {
+	background: #fff5a2;
+}
+
+.green {
+	background: #76d88d;
+}
+
+.pink {
+	background: #ffb6c1;
+}
+
+.orange {
+	background: #ffa966;
+}
+
+/*--- Media queries -----*/
+
+@media (min-width: 768px) {
+	/* Tablet size. The div items will be displayed in two columns, and take up 50% of the space. */
+	.item {
+		width: 50%;
+	}
+} 
+
+@media (min-width: 1024px) {
+	/* Desktop size. The colored items will be displayed in three columns, and take up 33% of the space. */
+	.item {
+		width: 33%;
+	}
+} 

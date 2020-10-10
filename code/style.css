@@ -13,6 +13,9 @@ h1 {
 h3 {
   font-weight: 400;
   font-size: 24px;
+  color: rgb(245, 237, 237);
+  font-weight: 600;
+  letter-spacing: 3px;
 }
 
 /* The main section are the flex parent that wraps its children onto as many rows as needed. */ 
@@ -27,12 +30,13 @@ h3 {
 
 /* The divs are the flex children, they will take up 100% and be displayed in one column on mobile/small screen */
 .item {
-	text-align: center;
-	width: 100%;
-	height: 400px;
+  text-align: center;
+  width: 100%;
+  height: 400px;
   flex-grow: 1;
   margin: 2px;
   border-radius: 8px;
+  padding-bottom: 18px;
 }
 
 /* First box with icecream */
@@ -45,6 +49,17 @@ h3 {
   width: 300px;
   object-fit: cover;
   border-radius: 18px;
+}
+
+.item .rectangular-horizontal-img {
+	height: 300px;
+	width: 300px;
+	object-fit: cover;
+	border-radius: 18px;
+}
+
+img {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* second box with icrecream */
@@ -60,6 +75,11 @@ h3 {
 .yellow {
 	background: #fff5a2;
 }
+
+.third-icecream {
+	object-position: bottom;
+}
+
 
 /* Fourth box with icecream */
 .green {

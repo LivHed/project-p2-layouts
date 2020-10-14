@@ -1,22 +1,115 @@
-body {
-  background-color: peachpuff;
-  font-family: 'Work Sans', sans-serif;
+* {
+  box-sizing: border-box;
 }
 
-/* General styling */
+body {
+  background-color: rgb(252, 249, 249);
+  font-family: 'Work Sans', sans-serif;
+  margin: 0;
+  min-height: 100vh;
+}
+
+/*---- General styling ----*/
 h1 {
-  font-weight: 400;
+  font-weight: 600;
+  text-align: center;
+  font-size: 48px;
+  margin: 10px;
+}
+
+h2 {
+  font-weight: 500;
   text-align: center;
   font-size: 38px;
+  margin: 15px;
+  margin-top: 96px;
 }
 
 h3 {
   font-weight: 400;
-  font-size: 24px;
-  color: rgb(245, 237, 237);
+  font-size: 26px;
+  color: rgb(247, 241, 241);
   font-weight: 600;
   letter-spacing: 3px;
 }
+
+/*---- Hero area ----*/
+.hero-image {
+  background: url('./img/hero-image.jpg') center no-repeat #bbbbbb;
+  background-size: cover;
+  min-height: 590px;
+  position: relative;
+  margin: 10px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+.arrow-icon {
+  font-size: 64px;
+  text-align: center;
+  margin-top: 22px;
+}
+
+/*---- Navbar area ----*/
+
+.main-nav {
+  margin-top: 5px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.list-items {
+  display: flex;
+  flex-flow: row wrap;
+  font-size: 19px;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo {
+  font-family: 'Luckiest Guy', cursive;
+  letter-spacing: 3.5px;
+  margin: 0;
+  font-size: 40px;
+  justify-content: left;
+}
+
+.logo a {
+  font-size: 1em;
+}
+
+.logo a,
+.main-nav a {
+  padding: 10px 15px;
+  text-transform: uppercase;
+}
+
+.main-nav a {
+  color: #3e3f41;
+  font-size: .99em;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.main-nav a:hover {
+  color: #d35726;
+}
+
+
+
+
+
 
 /* The main section are the flex parent that wraps its children onto as many rows as needed. */ 
 .flex-parent {
@@ -73,7 +166,7 @@ img {
 
 /* Third box with icecream */
 .yellow {
-	background: #fff5a2;
+	background: #ece38f;
 }
 
 .third-icecream {
@@ -86,6 +179,10 @@ img {
 	background: #76d88d;
 }
 
+.fourth-icecream {
+  object-position: bottom;
+}
+
 /* Fifth box with icecream */
 .pink {
 	background: #ffb6c1;
@@ -93,6 +190,20 @@ img {
  /* Sixth box with icecream */
 .orange {
 	background: #ffa966;
+}
+
+.footer-area {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 200px;
+  font-size: 24px;
+}
+
+.footer-area i {
+  color: black;
+  font-size: 36px;
 }
 
 /*--- Media queries -----*/

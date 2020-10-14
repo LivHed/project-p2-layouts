@@ -5,14 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ice cuties</title>
     <link rel="stylesheet" href="./style.css" />
-    <!--Google font-->
+    <!--Google fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
-  </head>
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <!--Font awesome CDN version 5.5 -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+  </head> 
+
   <body>
 
-    <header>
-      <h1>Icecreams we make</h1>
-      <!-- If you want a header with a title, logo and a navbar, here is where you should add that. -->
+    <header class="header">
+  <!--    <h1 class="logo"><a href="index.html">Ice cuties</a></h1>  -->
+        
+           
+      <nav class="main-nav">
+        <figure class="logo"><a href="index.html">Ice cuties</figure> 
+          <ul class="list-items">
+            <li class="nav-item"><a href="#">About us</a></li>
+            <li class="nav-item"><a href="#">Cafe</a></li>
+            <li class="nav-item"><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero-image">
+      <h1>Welcome to our frosty sweet corner of the world!</h1>
+      
+      <h2>The icecreams we make at Ice cuties</h2>
+        <div class="arrow-icon">
+          <i class="fas fa-arrow-circle-down"></i>
+        </div>
+      </div>
+      
     </header>
 
     <main class="flex-parent">
@@ -20,7 +43,7 @@
         <div class="item blue">
          <h3>Candy dream</h3> 
             <div>
-               <img class="rectangular-standing-img" src="./img/icecream1.jpg" alt="A pink icecream on a table">
+               <img class="rectangular-standing-img" src="./img/icecream1.jpg" alt="A pink icecream lying on a table">
             </div>
         </div>
 
@@ -32,31 +55,40 @@
         </div>
 
         <div class="item yellow">
-          <h3>Maca mix</h3>
+          <h3>Banana liqorice</h3>
           <div>
             <img class="rectangular-horizontal-img third-icecream" src="./img/icecream3.jpg" alt="Bowl of healthy icecream">
          </div>
-
         </div>
 
         <div class="item green">
-          <h3>Vegan choco</h3>
-
+          <h3>Creamy choco</h3>
+          <div>
+            <img class="rectangular-standing-img fourth-icecream" src="./img/icecream4.jpg" alt="Glass filled with cream and icecream">
+         </div>
         </div>
 
         <div class="item pink">
           <h3>Peanut jelly</h3>
+          <div>
+            <img class="rectangular-standing-img fifth-icecream" src="./img/icecream5.jpg" alt="Round glass filled with icecream">
+         </div>
 
         </div>
-
         <div class="item orange">
-          <h3>Oreo bar</h3>
-
+          <h3>Raspberry heaven</h3>
+          <div>
+            <img class="rectangular-standing-img sixth-icecream" src="./img/icecream6.jpg" alt="Bowl with pink icecream">
+         </div>
         </div>
 
     </main>
+
+    <footer class="footer-area">
+        <div><i class="fas fa-ice-cream"></i>Contact</div>
+        <div><i class="fas fa-ice-cream"></i>How to get here</div>
+        <div><i class="fas fa-ice-cream"></i>Follow us on social media</div>
+    </footer>
       
-      <!-- The main container to use as the flex parent for your card layout, the main content of the site should be in here.  -->
-    
   </body>
 </html>
